@@ -1,0 +1,30 @@
+Mensalidade
+id - ai
+aluno_id - ref: id on Alunos
+mês - MM
+semestre - YYYY.S
+data_venc - YYYY-MM-DD
+valor - XXX,XX
+pago - true ou false
+
+
++-----------------------------------------------------------+
+|Registrar Pagamento										|
++-----------------------------------------------------------+
+|															|
+|															|
+|				________Matricula________					|
+|															|
+|															|
+|															|
+|															|
++===========================================================+
+
+Presença
+
+id
+data
+turma
+disciplina
+Presença : array com os 'aluno_id's
+

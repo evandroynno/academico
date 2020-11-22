@@ -1,0 +1,50 @@
+@media (max-width: 400px) {
+	img{
+		width: 100% !important;
+	}
+}
+.logo{
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    background: #fff;
+}
+.bg-nav{
+    background: #b55;
+}
+.bg-nav .card-header,.bg-nav .modal-header{
+    /* background: #b55; */
+	color: #fff;
+}
+.bg-nav .card-body,.bg-nav .modal-body{
+    background: #eee;
+    color: #000;
+}
+.bg-nav .card-body a{
+    color: #000;
+}
+.bg-nav .card-body ul{
+    list-style: none;
+}
+.bg-nav .card-body ul li.list-group-item{
+    background: #eee;
+}
+.rdp{
+    height: 40px !important;
+}
+.breadcrumb{
+	padding: 0.4rem 1rem 0.2rem 1rem;
+	margin-bottom: 0;
+}
+.icone{
+    font-size: 20px;
+}
+footer {
+    clear: both;
+    color: #fff;
+    bottom: 0;
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    z-index: 9!important;
+	/* text-align: center; */
+}

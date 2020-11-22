@@ -1,0 +1,22 @@
+	<div class="row justify-content-center">
+		<div class="col-10">
+			<card titulo="Movimentações Financeiras" i="fas fa-file-invoice-dollar" cor="bg-nav">
+				<tabela-movimentacao
+				v-bind:titulos="['ID','Nome','Tipo','Valor','Descrição','Data']"
+				v-bind:itens="{{json_encode($movs->toArray())}}"
+				>
+				</tabela-movimentacao>
+			</card>
+		</div>
+	</div>
+
+<card titulo="Movimentações Financeiras" i="fas fa-file-invoice-dollar" cor="bg-nav">
+	<tabela-movimentacao
+	v-bind:titulos="['#','Nome','Tipo','Valor','Descrição','Data']"
+	{{-- v-bind:itens="{{json_encode($movs->toArray())}}" --}}
+	{{-- v-bind:itens="{{$movs->toJson()}}" --}}
+	v-bind:itens="[{'id':7,'nome':'telefone','tipo':'S','valor':-320,'descricao':'dioi','data':'2019-06-11'},{'id':1,'nome':'Mensalidade Paga','tipo':'E','valor':2500,'descricao':'Mensalidade de Aaron Delvalle de Oliveira Sobrinho','data':'2019-07-05'},{'id':2,'nome':'Mensalidade Paga','tipo':'E','valor':2500,'descricao':'Mensalidade de Aaron Delvalle de Oliveira Sobrinho','data':'2019-07-05'},{'id':4,'nome':'Mensalidade Paga','tipo':'E','valor':2500,'descricao':'Mensalidade de Aaron Delvalle de Oliveira Sobrinho','data':'2019-07-06'},{'id':5,'nome':'luz','tipo':'S','valor':-250.41,'descricao':'Luz Agosto','data':'2019-07-09'},{'id':6,'nome':'Mensalidade Paga','tipo':'E','valor':2300,'descricao':'Mensalidade de Clara da Silva','data':'2019-07-09'}]"
+	ordem="asc" ordem-col="data"
+	>
+	</tabela-movimentacao>
+</card>
