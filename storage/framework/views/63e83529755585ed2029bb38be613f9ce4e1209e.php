@@ -48,28 +48,14 @@
 								<?php endif; ?>
 							</div>
 						</div>
-						<div class="form-group row">
-							<label for="setor" class="col-md-4 col-form-label text-md-right">Setor</label>
-							<div class="col-md-6">
-								<select name="setor" id="setor" class="form-control">
-									<option value="">Escolha um setor</option>
-									<option value="direcao" <?php echo e(old('setor')=='direcao'?'selected':''); ?> >Direção</option>
-									<option value="secgeral" <?php echo e(old('setor')=='direcao'?'secgeral':''); ?>>Secretaria Geral</option>
-									<option value="coordenacao" <?php echo e(old('setor')=='direcao'?'coordenacao':''); ?>>Coordenação</option>
-									<option value="secretaria" <?php echo e(old('setor')=='direcao'?'secretaria':''); ?>>Secretaria</option>
-									<option value="administração" <?php echo e(old('setor')=='direcao'?'administração':''); ?>>Administração</option>
-								</select>
-							</div>
-						</div>
+
 						<div class="form-group row">
 							<label for="tipo" class="col-md-4 col-form-label text-md-right">Tipo de acesso</label>
 							<div class="col-md-6">
 								<select name="tipo" id="tipo" class="form-control">
 									<option value="">Escolha o tipo de acesso</option>
-									<option value="diretor" <?php echo e(old('tipo')=='diretor'?'selected':''); ?>>Diretor</option>
-									<option value="gerencial" <?php echo e(old('tipo')=='gerencial'?'selected':''); ?>>Gerencial</option>
-									<option value="supervisao" <?php echo e(old('tipo')=='supervisao'?'selected':''); ?>>Supervisão</option>
-									<option value="academico" <?php echo e(old('tipo')=='academico'?'selected':''); ?>>Acadêmico</option>
+									<option value="financeiro" <?php echo e(old('tipo')=='financeiro'?'selected':''); ?>>Financeiro</option>
+									<option value="secrataria" <?php echo e(old('tipo')=='secrataria'?'selected':''); ?>>Secretaria</option>
 									<option value="administrativo" <?php echo e(old('tipo')=='administrativo'?'selected':''); ?>>Administrativo</option>
 								</select>
 							</div>

@@ -6,15 +6,16 @@
 				<form action="<?php echo e(route('aluno.novaSolicitacao')); ?>" method="POST">
 					<?php echo csrf_field(); ?>
 
-					<card cor="bg-nav" titulo="Nova solicitacao" submit="Solicitar" voltar="route('aluno.home')">
+					<card cor="bg-nav" titulo="Nova solicitacao" submit="Solicitar" voltar="<?php echo e(route('aluno.home')); ?>">
 						
 						<div class="form-group row">
 							<label for="tipo" class="col-md-4 col-form-label text-md-right">O que solicitar</label>
 							<div class="col-md-6">
 								<select name="tipo" id="tipo" class="form-control">
 									<option >Escolha uma opção</option>
-									<option value="historico">Historico</option>
-									<option value="declaração">Declaração</option>
+									<option value="Historico">Historico</option>
+									<option value="Declaração">Declaração</option>
+									<option value="Outras">Outras</option>
 								</select>
 							</div>
 						</div>

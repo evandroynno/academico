@@ -117,7 +117,7 @@ class AuthServiceProvider extends ServiceProvider
 			}
 			return $pass;
 		});
-        Gate::define('secretaria', function(){});
+
 		Gate::define('rio', function(){
 			return Auth::user()->local == 'rio';
 		});

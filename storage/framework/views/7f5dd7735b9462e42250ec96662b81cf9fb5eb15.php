@@ -2,7 +2,7 @@
 <div class="container">
 	<div class="row justify-content-center">
 		<div class="col-md-10">
-			<card titulo="Lancar Notas - <?php echo e($disciplina->name); ?>" i="fas fa-book-reader" cor="bg-nav" voltar="<?php echo e(route('professor.home')); ?>">
+			<card titulo="Lancar Notas - <?php echo e($disciplina->name); ?>" i="fas fa-book-reader" cor="bg-nav" voltar="<?php echo e(url()->previous()); ?>">
 				<div class="card bg-white">
 					<form action="<?php echo e(route('admin.lancarNotasOk')); ?>" method="post">
 						<?php echo csrf_field(); ?>

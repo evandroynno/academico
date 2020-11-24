@@ -52,13 +52,11 @@
 											<div class="col-2"><strong>Etapa</strong></div>
 											<div class="col-1">{{$aluno->aluno->etapa_curso}}</div>
 										</div>
-										<div class="row justify-content-around my-2">
-											{{-- <a href="{{url("admin/lista_de_alunos/cadGrade/$aluno->aluno->id")}}" class="btn btn-sm btn-primary text-white">Atribuir Grade</a> --}}
-											{{-- <a href="{{url("admin/lista_de_alunos/verGrade/$aluno->aluno->id")}}" class="btn btn-sm btn-primary text-white">Ver Grade</a> --}}
+{{-- 										<div class="row justify-content-around my-2">
 											<a href="#" class="btn btn-sm btn-primary text-white">Editar Informações</a>
 											<a href="#" class="btn btn-sm btn-primary text-white">Gerar Histórico</a>
 										</div>
-									</div>
+ --}}									</div>
 								</div>
 							</li>
 						@empty

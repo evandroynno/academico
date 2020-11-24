@@ -9,7 +9,7 @@
 
 					</div>
 					<div class="card-footer">
-						<a href="{{route('home')}}" class="btn btn-primary text-white"><i class="fas fa-arrow-circle-left"></i> Voltar</a>
+						<a href="{{route('aluno.home')}}" class="btn btn-primary text-white"><i class="fas fa-arrow-circle-left"></i> Voltar</a>
 					</div>
 				</div>
 			</div>

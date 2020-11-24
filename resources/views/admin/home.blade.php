@@ -36,8 +36,8 @@
 							@endcan
 						</ul>
 					</li>
-					<li class="list-group-item"><a href="{{route('admin.listarProfessores')}}">Lista de Professores</a></li>
 					<li class="list-group-item"><a href="{{route('admin.listaAluno')}}">Lista de Alunos</a></li>
+					<li class="list-group-item"><a href="{{route('admin.listarProfessores')}}">Lista de Professores</a></li>
 					@can('adm', Auth::user())
 					<li class="list-group-item"><a href="{{route('admin.listaFunc')}}">Lista de Funcionario</a></li>
 					@endcan

@@ -51,12 +51,6 @@
 											<div class="col-2"><strong>Etapa</strong></div>
 											<div class="col-1"><?php echo e($aluno->aluno->etapa_curso); ?></div>
 										</div>
-										<div class="row justify-content-around my-2">
-											
-											
-											<a href="#" class="btn btn-sm btn-primary text-white">Editar Informações</a>
-											<a href="#" class="btn btn-sm btn-primary text-white">Gerar Histórico</a>
-										</div>
 									</div>
 								</div>
 							</li>

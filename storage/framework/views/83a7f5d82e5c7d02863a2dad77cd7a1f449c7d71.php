@@ -36,8 +36,8 @@
 							<?php endif; ?>
 						</ul>
 					</li>
-					<li class="list-group-item"><a href="<?php echo e(route('admin.listarProfessores')); ?>">Lista de Professores</a></li>
 					<li class="list-group-item"><a href="<?php echo e(route('admin.listaAluno')); ?>">Lista de Alunos</a></li>
+					<li class="list-group-item"><a href="<?php echo e(route('admin.listarProfessores')); ?>">Lista de Professores</a></li>
 					<?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('adm', Auth::user())): ?>
 					<li class="list-group-item"><a href="<?php echo e(route('admin.listaFunc')); ?>">Lista de Funcionario</a></li>
 					<?php endif; ?>

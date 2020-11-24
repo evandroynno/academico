@@ -33,7 +33,7 @@
 							<div class="row">
 								<div class="col-sm-6 col-md-4"><strong>Nome: </strong><?php echo e($funcionario->name); ?></div>
 								<div class="col-sm-6 col-md-4"><strong>Email: </strong><?php echo e($funcionario->email); ?></div>
-								<div class="col-sm-6 col-md-4"><strong>Tipo de Acesso: </strong><?php echo e($funcionario->tipo); ?></div>
+								<div class="col-sm-6 col-md-4 text-capitalize"><strong>Tipo de Acesso: </strong><?php echo e($funcionario->tipo); ?></div>
 								<div class="col-sm-6 col-md-4"><strong>Telefone: </strong><?php echo e($funcionario->telefone); ?></div>
 								
 								<div class="col-sm-6 col-md-4"><strong>Data de Nascimento: </strong><?php echo e($funcionario->dt_nasc); ?></div>
@@ -44,7 +44,7 @@
 										<button class="btn btn-primary dropdown-toggle" id="btnGroupDrop1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Opções</button>
 										<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
 											<button type="button" class="dropdown-item" data-toggle="modal" data-target="#modal<?php echo e($funcionario->id); ?>">Definir Tipo de acesso</button>
-											<a href="<?php echo e(route('admin.descadastrarFuncionario',['idFunc'=>$funcionario->id])); ?>">Remover Funcionario</a>
+											<a class="dropdown-item" href="<?php echo e(route('admin.descadastrarFuncionario',['idFunc'=>$funcionario->id])); ?>">Remover Funcionario</a>
 										</div>
 									</div>
 								</div>

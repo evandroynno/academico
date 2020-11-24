@@ -22,7 +22,7 @@ Homestead.yaml
 Homestead.json
 /.vagrant
 .phpunit.result.cache
-/storage/framework
+/storage/
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml

@@ -3,7 +3,7 @@
 <div class="container">
 	<div class="row justify-content-center">
 		<div class="col-md-10">
-			<card titulo="Lancar Notas - {{$disciplina->name}}" i="fas fa-book-reader" cor="bg-nav" voltar="{{route('professor.home')}}">
+			<card titulo="Lancar Notas - {{$disciplina->name}}" i="fas fa-book-reader" cor="bg-nav" voltar="{{url()->previous()}}">
 				<div class="card bg-white">
 					<form action="{{route('admin.lancarNotasOk')}}" method="post">
 						@csrf
