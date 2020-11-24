@@ -12,7 +12,7 @@
 		@if(Auth::user()->grades->toArray())
         <div class="col-md-4 mb-2">
             <div class="card bg-nav">
-                <div class="card-header"><i class="fas fa-book"></i> Matérias</div>
+                <div class="card-header"><i class="fas fa-book"></i> Disciplinas</div>
                 <div class="card-body">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item"><a href='{{route('aluno.disciplinas')}}'>Disciplinas do curso</a></li>
